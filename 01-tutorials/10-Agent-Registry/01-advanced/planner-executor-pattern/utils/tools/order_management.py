@@ -1,4 +1,3 @@
-import json
 import db
 
 def lambda_handler(event, context):

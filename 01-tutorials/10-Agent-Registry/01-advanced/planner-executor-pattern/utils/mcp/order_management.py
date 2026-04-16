@@ -6,7 +6,10 @@ Tools deployed:
   order_update_tool  — update_order_status, update_shipping_addr
   order_cancel_tool  — cancel_order
 """
-import io, time, zipfile, pathlib
+import io
+import time
+import zipfile
+import pathlib
 
 _HERE   = pathlib.Path(__file__).parent
 _LAMBDA = (_HERE.parent / "tools" / "order_management.py").read_text()

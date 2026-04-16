@@ -2,7 +2,9 @@
 DynamoDB helper bundled into every Lambda zip and A2A agent.
 Table names are injected via environment variables (ORDERS_TABLE, etc.).
 """
-import boto3, os, json
+import boto3
+import os
+import json
 from decimal import Decimal
 from boto3.dynamodb.conditions import Attr, Key
 

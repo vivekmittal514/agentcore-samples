@@ -6,7 +6,10 @@ Tools deployed:
   inventory_check_tool — check_inventory, check_multiple_inventory
   shipping_track_tool  — track_shipment, estimate_delivery
 """
-import io, time, zipfile, pathlib
+import io
+import time
+import zipfile
+import pathlib
 
 _HERE   = pathlib.Path(__file__).parent
 _LAMBDA = (_HERE.parent / "tools" / "read_services.py").read_text()

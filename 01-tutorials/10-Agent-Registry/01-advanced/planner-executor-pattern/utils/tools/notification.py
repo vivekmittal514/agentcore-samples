@@ -1,4 +1,5 @@
-import json, uuid
+import uuid
+
 import db
 
 def lambda_handler(event, context):

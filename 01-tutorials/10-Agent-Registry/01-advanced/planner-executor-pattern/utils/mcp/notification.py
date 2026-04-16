@@ -6,7 +6,10 @@ Tools deployed:
   email_template_tool — get_template, list_templates, create_template
   sms_notify_tool     — send_sms, send_bulk_sms
 """
-import io, time, zipfile, pathlib
+import io
+import time
+import zipfile
+import pathlib
 
 _HERE   = pathlib.Path(__file__).parent
 _LAMBDA = (_HERE.parent / "tools" / "notification.py").read_text()
